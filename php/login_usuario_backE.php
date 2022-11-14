@@ -3,8 +3,6 @@
    session_start();
    //Exporta la variable 
    include 'conexion_backE.php';
-
-
    //Obtiene las variables de la 
    $correo = $_POST['correo'];
    $contrasenia = $_POST['contrasenia'];
@@ -17,9 +15,11 @@
    if(mysqli_num_rows($validar_login) > 0){
     $_SESSION['usuario'] = $correo;
     header("location: ../php/home.php");
+    
     exit();
+
    }else{
-    echo'
+        echo'
         <script>
         alert("Usuario no existe");
         window.location="../index.php";
@@ -28,5 +28,5 @@
         exit();
    }
 
-    
+   
 ?>

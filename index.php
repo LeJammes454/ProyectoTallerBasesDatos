@@ -24,8 +24,9 @@ echo'
     <link rel="stylesheet" href="assets/css/estilos.css">
 
 </head>
-<body>
 
+<body>
+<div class="filtro"></div>
         <main>
 
             <div class="contenedor__todo">
